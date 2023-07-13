@@ -5,7 +5,6 @@ function diceLeft(){
     var randomNumber1 = Math.floor(Math.random()*6)+1;
     console.log(randomNumber1);
     
-    
     if(randomNumber1===1){
         document.querySelector("img").setAttribute("src","./images/dice1.png");
     }else if(randomNumber1===2){
@@ -49,11 +48,11 @@ function diceRight(){
            
         
         if(diceLeft() > diceRight()){
-            document.querySelector("h1").innerHTML = "Player 1 wins";
+            document.querySelector("h1").innerHTML = " 🚩Player 1 wins";
         }else if(diceLeft() < diceRight()){
-            document.querySelector("h1").innerHTML = "Player 2 wins";
+            document.querySelector("h1").innerHTML = "Player 2 wins🚩";
         }else if(diceLeft()==diceRight()){
-            document.querySelector("h1").innerHTML = "Draw!!";
+            document.querySelector("h1").innerHTML = "🟰Draw!!";
         }
 }
 
